@@ -23,7 +23,7 @@ async def on_message(message):
     user_msg = message.content.lower().strip()
     # print(message.guild)
     # print(message.author.id)
-    term_delay = 3.0
+    term_delay = 6.0
     if message.content.startswith('$hello'):
         sleep(1.5)
         await message.channel.send(mention_user + " I am awaiting your orders master")
