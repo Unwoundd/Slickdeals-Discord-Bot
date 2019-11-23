@@ -34,7 +34,13 @@ async def on_message(message):
         for entry in hold_msgs:
             await message.channel.send(entry)
             sleep(term_delay)
+        )
+        
+        await message.channel.send(mention_user + "<:peeposmile:612092175613689877>")
+
+        sleep(2)
         await message.channel.send(mention_user + " Your wish is my command master, check out these latest deals ")
+
 
 
     elif "!sd" in user_msg:
@@ -50,9 +56,13 @@ async def on_message(message):
         for entry in hold_msgs:
             await message.channel.send(entry)
             sleep(term_delay)
+<<<<<<< Updated upstream
         await message.channel.send(mention_user + " I will serve you the slickest of deals master ")
         sleep(2)
         await message.channel.send("<:peeposmile:612092175613689877>")
+=======
+        await message.channel.send(mention_user + " <:peepohappy:612135420288827392> I will serve you the slickest of deals master ")
+>>>>>>> Stashed changes
 
 def fetch_token():
     token = str(get_token())
