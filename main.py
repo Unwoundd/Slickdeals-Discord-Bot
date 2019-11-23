@@ -23,7 +23,7 @@ async def on_message(message):
     user_msg = message.content.lower().strip()
     # print(message.guild)
     # print(message.author.id)
-    term_delay = 6.0
+    term_delay = 5.0
     if message.content.startswith('$hello'):
         sleep(1.5)
         await message.channel.send(mention_user + " I am awaiting your orders master")
@@ -51,6 +51,8 @@ async def on_message(message):
             await message.channel.send(entry)
             sleep(term_delay)
         await message.channel.send(mention_user + " I will serve you the slickest of deals master ")
+        sleep(2)
+        await message.channel.send("<:peeposmile:612092175613689877>")
 
 def fetch_token():
     token = str(get_token())
