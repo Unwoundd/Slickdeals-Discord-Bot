@@ -23,6 +23,7 @@ async def on_message(message):
     user_msg = message.content.lower().strip()
     # print(message.guild)
     # print(message.author.id)
+    term_delay = 3.0
     if message.content.startswith('$hello'):
         sleep(1.5)
         await message.channel.send(mention_user + " I am awaiting your orders master")
@@ -32,7 +33,7 @@ async def on_message(message):
         hold_msgs = slickdeals_feed.get_frontpage()[0:5]
         for entry in hold_msgs:
             await message.channel.send(entry)
-            sleep(0.4)
+            sleep(term_delay)
         await message.channel.send(mention_user + " Your wish is my command master, check out these latest deals ")
 
 
@@ -48,7 +49,7 @@ async def on_message(message):
 
         for entry in hold_msgs:
             await message.channel.send(entry)
-            sleep(0.4)
+            sleep(term_delay)
         await message.channel.send(mention_user + " I will serve you the slickest of deals master ")
 
 def fetch_token():
