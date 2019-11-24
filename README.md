@@ -1,5 +1,8 @@
 # Discord Slickdeals Bot
-### !sd 
-### !sd headphones
-### !sd lenovo thinkpad 10
+#### Example commands:
+```
+!sd 
+!sd headphones
+!sd lenovo thinkpad 10
+```
 
