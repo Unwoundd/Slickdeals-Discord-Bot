@@ -60,7 +60,7 @@ async def on_message(message):
         await message.channel.send(mention_user + " I will serve you the slickest of deals master ")
         sleep(2)
         await message.channel.send("<:peeposmile:612092175613689877>")
-    elif " <:peepohappy:612135420288827392>" in user_msg:
+    elif "<:peepohappy:612135420288827392>" in user_msg:
         sleep(2)
         await message.channel.send("<:peeposmile:612092175613689877>")
     elif "<:cmonbruh:599709430006808582>" in user_msg:
