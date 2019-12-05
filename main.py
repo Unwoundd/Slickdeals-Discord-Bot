@@ -77,7 +77,10 @@ Example commands
         advertise_words = ["cheap", "value",
                            "affordable", "black friday", "sale"]
         if any([word for word in advertise_words if word in user_msg]):
-            await message.channel.send("You want a deal? type !sd to get them  <:chad:604112231667466240>")
+            rand_int = randint(0, 7)
+            print(rand_int)
+            if rand_int == 1:
+                await message.channel.send("You want a deal? type !sd to get them  <:chad:604112231667466240>")
 
 
 def fetch_token():
